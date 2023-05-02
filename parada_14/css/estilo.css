@@ -1,0 +1,122 @@
+body{
+    background-image: url("../img/bg_02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.main{
+    margin: auto;
+    font-size: 15px;
+    width: 70%;
+    text-align: left;
+    background-color: white;
+    
+}
+
+#menu{
+    background-color: rgb(126, 154, 202);
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    
+    
+}
+
+#menu li{
+    float: left;
+}
+
+#menu li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#menu li a:hover{
+    transition: 0.5;
+    color: rgb(151, 30, 30);
+    background-color: black;
+}
+
+.active{
+    background-color: #327ecf;
+    border-radius: 5px;
+}
+.header{
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(123, 158, 217);
+    color: black;
+}
+
+.header h1{
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.banner img{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.content img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box{
+    padding: 15px;
+}
+
+.box h2{
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.box p{
+    text-align:center ;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(123, 158, 217);
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px){
+    .main{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-image: none;
+    }
+
+    .main{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+}
